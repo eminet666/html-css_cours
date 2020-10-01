@@ -1,0 +1,27 @@
+.box {
+     display: flex;
+     flex-flow: row nowrap;
+	 border: dotted 1px;
+	 /* width: 500px; */
+}
+
+/* flex : grw shrik basis */
+/* 
+   flex-basis : 
+   flex-grow : 
+   flex-shrink : 
+*/
+.one {
+    flex: 0 1 100px;
+	background-color: yellow;
+}
+
+.two {
+    flex: 2 1 100px;
+	background-color: green;
+}
+
+.three {
+    flex: 1 1 100px;
+	background-color: red;
+}

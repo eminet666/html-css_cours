@@ -1,0 +1,23 @@
+#global{
+    width:400px;
+    height:400px;
+	background-color: Silver;
+}
+ 
+#global div{
+    width:100px;
+    height:100px;
+}
+ 
+#bloc1{
+	background-color: Red;
+}
+#bloc2{
+	background-color: Yellow;
+}
+#bloc3{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+	background-color: Blue;
+}

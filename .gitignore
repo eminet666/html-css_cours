@@ -1,0 +1,14 @@
+# ignore files
+.DS_Store
+Thumbs.db
+~*.*
+
+# ignore files
+/todo.txt
+/x_documents/*.doc
+/x_documents/*.docx
+
+# ignore rep
+/z_sources
+/z_notes
+/x_zip

@@ -1,0 +1,25 @@
+#global{
+    width:400px;
+    height:400px;
+    position:relative;
+ 	 background-color: Silver;
+}
+ 
+#global div {
+    width:100px;
+    height:100px;
+	 margin:10px;
+    float:left;
+}
+
+#bloc1, #bloc2{
+ 	 background-color: Red;
+}
+
+#bloc3{
+	 background-color: Blue;
+}
+
+.clear{
+        clear:both;
+}

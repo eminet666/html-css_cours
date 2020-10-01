@@ -1,0 +1,17 @@
+#global {
+    width:400px;
+    height:400px;
+	background-color: Silver;
+}
+
+div{
+	width: 100px;
+	height: 100px;
+	background-color: Red;
+}
+
+code {
+	font-family : "Courier New", Courier, monospace;
+}
+
+

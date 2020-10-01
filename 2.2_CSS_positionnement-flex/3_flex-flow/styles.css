@@ -1,0 +1,12 @@
+.box {
+     display: flex;
+     flex-flow: row nowrap;
+	 border: dotted 1px;
+}
+
+.box div {
+	background-color: yellow;
+	border : 1;
+	margin: 10px;
+	width: 300px;
+}

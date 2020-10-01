@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <title>titre de la page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            p { color: red;}
+        </style>
+    </head>
+
+    <body style="background-color: silver;" onLoad="document.getElementById('info').innerHTML += Date()">
+		<p id="info">info</p>
+
+        <script>
+            document.getElementById("info").innerHTML = "Aujourd'hui = ";
+        </script>
+    </body>
+
+</html>
+

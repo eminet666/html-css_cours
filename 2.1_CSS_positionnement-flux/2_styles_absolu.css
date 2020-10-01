@@ -1,0 +1,30 @@
+#global{
+	width: 400px;
+	height: 400px;
+	position: relative; /* attention ligne nécessaire */
+	background-color: Silver;
+}
+
+div{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+
+#global #bloc1{
+    top:20px;
+    left:20px;
+    background-color: Red;
+}
+
+#global #bloc2{
+	top: 20px;
+	right: 20px;
+	background-color: Yellow;
+}
+
+#global #bloc3{
+	bottom: 20px;
+	right: 20px;
+	background-color: Blue;
+}
