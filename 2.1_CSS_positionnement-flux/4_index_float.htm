@@ -1,20 +1,26 @@
-<!doctype html> 
+<!doctype html>
 <html>
     <head>
 		<meta charset="utf-8">
 		<title>POSITION FLOAT</title>
-        <link href="4_styles_float.css" rel="stylesheet" type="text/css" />
+        <style>
+            #global { width: 400px; height: 400px; background-color: silver; margin: 10px; }
+            div     { width: 100px; height: 100px; background-color: red;    margin: 10px;
+	                  float: right;
+            }
+        </style>
     </head>
     <body>
         <div id="global">
             <div id="bloc1">bloc1</div>
             <div id="bloc2">bloc2</div>
             <div id="bloc3">bloc3</div>
-            <div id="bloc4">bloc4</div>			
+            <div id="bloc4">bloc4</div>
         </div>
 		<br>
+
 		<p>Positionnement côte à côte par la droite (ou gauche)</p>
-		<code>#global div{ float: right; }</code>		
+		<code>#global div{ float: right; }</code>
     </body>
- 
+
 </html>

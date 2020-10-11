@@ -1,0 +1,124 @@
+/* chargement d'un typo trouvée sur internet */
+@font-face
+{
+    font-family: 'Antonio';
+    src: url('Antonio-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {  margin: 0;} /* aucun espace entre les différents blocs, j'utiliserai des padding pour créer des espace dans les blocs) */
+body
+{
+}
+
+#global
+{
+    width: 90%; /* le bloc ne fait que 90% de la largeur de la page, cela permet donc de conserver 10% de blanc sur la page */
+    margin: auto; /* si les marges s'ajustent automatiquement, elles seront égales, donc le bloc centré horizontalement. */
+}
+
+h1
+{
+    color: #990000;
+    font-size: 3em;
+    padding-top: 1em;
+}
+
+h2, article h4
+{
+    color: #cc0000;
+}
+
+h1, h2, h4
+{
+    font-family: 'Antonio', 'Arial', sans-serif;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row; /* les 2 blocs sont mis côte à côte */
+    vertical-align: top;
+    text-align: left;
+    padding-left: 0.5em;
+    justify-content: space-between; /* l'espace restant est mis entre les 2 blocs ... qui sont dont mis de chaque côté*/
+}
+
+#effectif {
+    padding-top : 0.5em;
+}
+
+#logo {
+    max-width: 23%;
+    padding: 0.5em;
+}
+#mention {
+    max-width: 50%;
+}
+
+#contenu
+{
+    display: flex;
+    flex-direction: column-reverse; /* (textes) et (images), seront l'un en dessous de l'autre dans l'orde inverse du htmk */
+    padding-top : 2em;
+    align-content: flex-end; 
+}
+
+#conteneur1
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: top;
+}
+
+article h4
+{
+    padding-top: 1em;
+}
+
+img
+{
+    max-width: 100%; /* ces 2 lignes permettent que les images soient redimensionnées proportionellement */
+	height: auto;
+}
+
+article
+{
+    margin : 0.5em;
+    padding : 0.5em;  /* préserve une marge de 5% de l'espace à droite */
+    width : 30%;
+    border: dotted 1px black;
+}
+
+ul {   /* les items de la liste sont précédés par une demi-ligne d'espace avant et après*/
+    padding-top : 0.5em;
+    padding-bottom : 0.5em;
+}
+
+#conteneur2
+{
+    display: flex;
+    flex-direction: row;
+    vertical-align: top;
+    text-align: center;
+}
+
+#conteneur2 p
+{
+    padding-bottom: 1em;    /* une ligne vide sous la légende avant d'enchainer sur l'image suivante */
+    font-style: italic;
+}
+
+.visuel
+{
+    margin : 0.5em;
+    padding : 0.5em;  /* préserve une marge de 5% de l'espace à droite */
+    border: dotted 1px black;
+}
+
+.visuel:last-child {
+    display: none;
+}

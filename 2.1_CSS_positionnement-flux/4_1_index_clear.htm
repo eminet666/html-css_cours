@@ -1,23 +1,28 @@
-<!doctype html> 
+<!doctype html>
 <html>
     <head>
 		<meta charset="utf-8">
 		<title>POSITION FLOAT _ CLEAR solution 1</title>
-        <link href="4_1_styles_clear.css" rel="stylesheet" />
+        <style>
+            #global { width: 400px; height: 400px; background-color: silver; margin: 10px; }
+            div     { width: 100px; height: 100px; background-color: red;    margin: 10px;
+	                  float: right;
+            }
+            #bloc3{
+                clear:right;
+                background-color: blue;
+            }
+        </style>
     </head>
     <body>
         <div id="global">
             <div id="bloc1">bloc1</div>
             <div id="bloc2">bloc2</div>
             <div id="bloc3">bloc3</div>
+            <div id="bloc4">bloc4</div>
         </div>
 		<br>
-		<p>Interuption du float gauche</p>
-		<code>
-			div { float:left; }
-			#bloc3{ clear:left; }
-		</code>	
+		<p>Interuption du float droite</p>
     </body>
- 
-</html>
 
+</html>

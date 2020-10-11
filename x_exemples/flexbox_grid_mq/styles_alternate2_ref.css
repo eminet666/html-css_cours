@@ -1,0 +1,40 @@
+* {  margin: 0;} /* aucun espace entre les différents blocs, j'utiliserai des padding pour créer des espace dans les blocs) */
+body
+{
+}
+
+#global
+{
+    width: 90%; /* le bloc ne fait que 90% de la largeur de la page, cela permet donc de conserver 10% de blanc sur la page */
+    margin: auto; /* si les marges s'ajustent automatiquement, elles seront égales, donc le bloc centré horizontalement. */
+}
+
+div {
+    background-color: #cccccc;
+    border: dotted 1px black;
+}
+
+#contenu {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0.5em;
+  grid-auto-rows: minmax(50px, auto);
+}
+
+/* syntaxe : "grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end; "*/
+#e1 { grid-area: 1 / 1 / 1 / 7; }
+#e2 { grid-area: 2 / 1 / 2 / 7; }
+#e3 { grid-area: 3 / 1 / 3 / 3; }
+#e4 { grid-area: 1 / 10 / 1 / 13; }
+
+#i1 { grid-area: 4 / 1 / 6 / 7; }
+#i2 { grid-area: 4 / 7 / 5 / 10; }
+#i3 { grid-area: 4 / 10 / 5 / 13; }
+#i4 { grid-area: 5 / 7 / 6 / 10; }
+#i5 { grid-area: 5 / 10 / 6 / 13; }
+
+#a1 { grid-area: 6 / 1 / 7 / 5; }
+#a2 { grid-area: 6 / 5 / 7 / 9; }
+#a3 { grid-area: 6 / 9 / 7 / 13; }
+#a4 { grid-area: 7 / 1 / 8 / 5; }
+#a5 { grid-area: 7 / 5 / 8 / 9; }

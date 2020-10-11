@@ -1,0 +1,54 @@
+<!-- css grid :
+- tuto : https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout/Les_concepts_de_base
+- tuto : https://la-cascade.io/se-lancer-dans-css-grid/
+- jeu :  https://cssgridgarden.com/#fr
+- ref :  https://labs.jensimmons.com/index.html  -->
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<style>
+			body {
+				background-color: silver;
+			}
+			#conteneur {
+				background-color: gray;
+				display: grid;
+			    grid-template-columns: repeat(3, 1fr);
+			    grid-auto-rows: 100px;
+				grid-gap: 1em 20px;
+			}
+			#conteneur div {
+				background-color: yellow;
+				border: dotted black 1px;
+			}
+			#conteneur #box1 div {
+				background-color: lime;
+				border: dotted black 1px;
+			}
+
+			#box1 { grid-area: 1 / 1 / 3 / 4;
+					display: grid;
+					grid-template-columns: repeat(3, 1fr);
+					grid-gap: 10px 10px;
+			}
+			#box2 { grid-area: 3 / 1 / 5 / 1; }
+
+		</style>
+	</head>
+
+	<body>
+		<div id="conteneur">
+			<div id="box1">
+			    <div class="nested">a</div>
+			    <div class="nested">b</div>
+			    <div class="nested">c</div>
+			</div>
+			<div id="box2">Deux</div>
+			<div id="box3">Trois</div>
+			<div id="box4">Quatre</div>
+			<div id="box5">Cinq</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,82 @@
+/* chargement d'un typo trouvée sur internet */
+@font-face
+{
+    font-family: 'Antonio';
+    src: url('Antonio-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {  margin: 0;} 
+body
+{
+}
+
+#global
+{
+    width: 90%;
+    margin: auto;
+}
+
+h1
+{
+    color: #990000;
+    font-size: 2.5em;
+}
+
+h2, article h4
+{
+    color: #cc0000;
+}
+
+h1, h2, h4
+{
+    font-family: 'Antonio', 'Arial', sans-serif;
+}
+
+#contenu {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0.5em;
+  grid-auto-rows: auto;
+}
+
+#e1 { grid-area: 1 / 1 / 1 / 7; }
+#e2 { grid-area: 2 / 1 / 2 / 7; }
+#e3 { grid-area: 3 / 1 / 3 / 3; }
+#e4 { grid-area: 1 / 10 / 1 / 13; }
+
+#i1 { grid-area: 4 / 1 / 6 / 7; }
+#i2 { grid-area: 4 / 7 / 5 / 10; }
+#i3 { grid-area: 4 / 10 / 5 / 13; }
+#i4 { grid-area: 5 / 7 / 6 / 10; }
+#i5 { grid-area: 5 / 10 / 6 / 13; }
+
+#a1 { grid-area: 6 / 1 / 7 / 5; }
+#a2 { grid-area: 6 / 5 / 7 / 9; }
+#a3 { grid-area: 6 / 9 / 7 / 13; }
+#a4 { grid-area: 7 / 1 / 8 / 5; }
+#a5 { grid-area: 7 / 5 / 8 / 9; }
+
+
+img
+{
+    max-width: 100%;
+	height: auto;
+}
+
+article h4 { padding-top: 1em; }
+article { padding-right: 5%; }
+ul {
+    padding-top : 0.5em;
+    padding-bottom : 0.5em;
+}
+
+#e2 { border-top: dotted 1px black; padding-top: 0.5em; padding-bottom: 0.5em; }
+#e3 { border-top: dotted 1px black; padding-bottom : 2em; }
+#e4 { border-bottom: dotted 1px black; }
+#i1, #i2, #i3, #i4, #i5 { border: dotted 1px black; padding: 0.5em; }
+#i1 p, #i2 p, #i3 p, #i4 p, #i5 p {  padding-bottom: 1em; font-style: italic; }
+#a1, #a2, #a3, #a4, #a5 { border: dotted 1px black; padding: 0.5em; }
+
+#a1, #a2, #a3 { margin-top: 2em; }

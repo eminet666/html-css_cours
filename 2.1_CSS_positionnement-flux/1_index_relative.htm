@@ -1,9 +1,18 @@
-<!doctype html> 
+<!doctype html>
 <html>
     <head>
 		<meta charset="utf-8">
 		<title>POSITION RELATIVE</title>
-        <link href="1_styles_relative.css" rel="stylesheet" />
+        <style>
+            #global { width: 400px; height: 400px; background-color: silver; }
+            div     { width: 100px; height: 100px; background-color: red; }
+            #bloc2  {
+                position: relative;
+            	bottom: 50px;
+            	left: 25px;
+            	background-color: Yellow;
+            }
+        </style>
     </head>
     <body>
         <div id="global">
@@ -13,8 +22,6 @@
         </div>
 		<br>
 		<p>Positionnement en décalage par rapport sa position dans le flux</p>
-		<code>#bloc2{ position: relative; bottom: 50px; left: 25px; }</code>
-		
     </body>
- 
+
 </html>

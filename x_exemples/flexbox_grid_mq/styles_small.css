@@ -1,0 +1,97 @@
+/* chargement d'un typo trouvée sur internet */
+@font-face
+{
+    font-family: 'Antonio';
+    src: url('Antonio-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h4
+{
+    font-family: 'Antonio', 'Arial', sans-serif;
+}
+
+* {  margin: 0;}
+body
+{
+    background-color : grey; // changemment de couleur de fond
+}
+
+h1
+{
+    color: #990000;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top : 1px solid black;
+}
+
+h2, article h4
+{
+    color: #cc0000;
+}
+
+article h4
+{
+    padding-top: 1em;
+}
+
+img
+{
+    margin-left: auto;
+    max-width: 100%;
+	height: auto;
+}
+img:first-of-type {
+  padding-top: 1em;
+}
+
+article
+{
+    padding-right: 5%;
+}
+
+#global
+{
+    width: 90%;
+    margin: auto;
+}
+
+#contenu
+{
+    display: flex;
+    flex-direction: column-reverse; /* les images d'abord */
+    padding-top : 2em;
+}
+
+#conteneur1
+{
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    width: 100%; /* les textes en pleine largeur */
+}
+
+#conteneur2
+{
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    text-align: right;
+    width: 100%; /* les images en pleine largeur */
+}
+
+#conteneur2 p
+{
+    padding-bottom: 1em;
+    font-style: italic;
+}
+ul {
+    padding-top : 0.5em;
+    padding-bottom : 0.5em;
+}
+
+#effectif {
+    padding-top : 0.5em;
+    border-top : 1px solid black;
+}

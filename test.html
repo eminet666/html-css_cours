@@ -1,0 +1,44 @@
+<!-- flex :
+- tuto : https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Concepts_de_base_flexbox
+- jeu :  https://flexboxfroggy.com/#fr https://cssgridgarden.com/#fr
+css grid :
+- tuto : https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout/Alignement_des_bo%C3%AEtes_avec_les_grilles_CSS
+- jeu :  https://codepip.com/games/grid-garden/
+- ref :  https://labs.jensimmons.com/index.html  -->
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<style>
+			body {
+				background-color: silver;
+			}
+			#global {
+				background-color: gray;
+								float: right;
+			}
+			.groupe {
+				color: red;
+				width: 50px;
+				height: 25px;
+				background-color: yellow;
+				margin: 10px;
+				padding: 50px;
+			}
+		</style>
+	</head>
+
+	<body>
+        <div id="global">
+	          <div class="groupe">One</div>
+	          <div class="groupe">Two</div>
+	          <div class="groupe" id="test">Three</div>
+			  <div class="groupe">Four</div>
+			  <div class="groupe">One</div>
+	          <div class="groupe">Two</div>
+			  <div class="groupe">One</div>
+	          <div class="groupe">Two</div>
+        </div>
+	</body>
+</html>

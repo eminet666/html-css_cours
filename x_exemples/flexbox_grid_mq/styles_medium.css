@@ -1,0 +1,108 @@
+/* chargement d'un typo trouvée sur internet */
+@font-face
+{
+    font-family: 'Antonio';
+    src: url('Antonio-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h4
+{
+    font-family: 'Antonio', 'Arial', sans-serif;
+}
+
+* {  margin: 0;}
+body
+{
+    background-color : silver; /* changemment de couleur de fond */
+}
+
+h1
+{
+    color: #990000;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top : 1px solid black;
+}
+
+h2, article h4
+{
+    color: #cc0000;
+}
+
+article h4
+{
+    padding-top: 1em;
+}
+
+img
+{
+    margin: auto;
+    max-width: 47%; /* images à moitié pour 2 par ligne */
+	height: auto;
+    padding : 0.5em; /* espace intérieur entre les vignettes */
+    margin-bottom : 1em; /* espace entre 2 lignes de vigenttes */
+}
+img:nth-child(3) {
+  display: none; /* cache la premiere image pour avoir un nombre pair */
+}
+
+article
+{
+    width: 47%; /* pour 2 articles sur la même ligne */
+    padding : 0.5em; /* espace intérieur entre les vignettes */
+    margin-bottom : 1em; /* espace entre 2 lignes de vigenttes */
+    margin-left : 0.19em; /* espace entre 2 lignes de vigenttes */
+    margin-right : 0.19em; /* espace entre 2 lignes de vigenttes */
+    border: dotted 1px white;
+}
+
+#global
+{
+    width: 90%;
+    margin: auto;
+}
+
+#contenu
+{
+    display: flex;
+    flex-direction: column-reverse; /* les images d'abord */
+    padding-top : 2em;
+}
+
+#conteneur1
+{
+    display: flex;
+    flex-direction: row; /* textes passées en ligne ...*/
+    flex-wrap: wrap;    /* ... avec retour à la ligne */
+    vertical-align: top;
+    width: 100%; /* les textes en pleine largeur */
+}
+
+#conteneur2
+{
+    display: flex;
+    flex-direction: row; /* images passées en ligne ...*/
+    flex-wrap: wrap;    /* ... avec retour à la ligne */
+    vertical-align: top;
+    text-align: right;
+    width: 100%; /* les images en pleine largeur */
+}
+
+#conteneur2 p
+{
+    padding-bottom: 1em;
+    font-style: italic;
+    display: none; /* les légendes sont cachées */
+}
+
+ul {
+    padding-top : 0.5em;
+    padding-bottom : 0.5em;
+}
+
+#effectif {
+    padding-top : 0.5em;
+    border-top : 1px solid black;
+}

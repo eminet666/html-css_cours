@@ -1,9 +1,18 @@
-<!doctype html> 
+<!doctype html>
 <html>
     <head>
 		<meta charset="utf-8">
 		<title>POSITION FIXE</title>
-        <link href="3_styles_fixe.css" rel="stylesheet" />
+        <style>
+            #global { width: 400px; height: 400px; background-color: silver; }
+            div     { width: 100px; height: 100px; background-color: red; }
+            #bloc3{
+                position:fixed;
+                top :20px;
+                right:20px;
+            	background-color: blue;
+            }
+        </style>
     </head>
     <body>
         <div id="global">
@@ -11,9 +20,9 @@
             <div id="bloc2">bloc2</div><br>
             <div id="bloc3">bloc3</div>
         </div>
+
 		<br>
-		<p>Positionnement par rapport à la fenêtre du navigateur</p>
-		<code>#bloc3 { position:fixed; bottom:20px; right:20px; }</code>		
+		<p>Positionnement fixe par rapport à la fenêtre du navigateur</p>
     </body>
- 
+
 </html>

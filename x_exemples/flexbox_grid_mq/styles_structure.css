@@ -1,0 +1,102 @@
+/* chargement d'un typo trouvée sur internet */
+@font-face
+{
+    font-family: 'Antonio';
+    src: url('Antonio-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h4
+{
+    font-family: 'Antonio', 'Arial', sans-serif;
+    border: solid 1px blue;
+}
+
+* {  margin: 0;} /* aucun espace entre les différents blocs, j'utiliserai des padding pour créer des espace dans les blocs) */
+body
+{
+    border: solid 1px green;
+}
+
+h1
+{
+    color: #990000;
+    padding-top: 1em;   /* em est une autre unité que le px : 1 em vaut la taille par défaut en pixel du support : 16 px ici sur un ordi */
+    padding-bottom: 1em;
+    border-top : 1px solid black; /* ligne noire au dessus */
+}
+
+h2, article h4
+{
+    color: #cc0000;
+}
+
+article h4
+{
+    padding-top: 1em;
+}
+
+img
+{
+    margin-left: auto; /* la marge automatique à gauche pousse l'image sur la droite du parent */
+    max-width: 90%; /* ces 2 lignes permettent que les images soient redimensionnées proportionellement */
+	height: auto;
+}
+img:first-of-type {
+  padding-top: 1em; /* ajoute un espace avant la première photo pour être au même niveau que le 1er article */
+}
+
+article
+{
+    padding-right: 5%; /* préserve une marge de 5% de l'espace à droite */
+}
+
+#global
+{
+    width: 90%; /* le bloc ne fait que 90% de la largeur de la page, cela permet donc de conserver 10% de blanc sur la page */
+    margin: auto; /* si les marges s'ajustent automatiquement, elles seront égales, donc le bloc centré horizontalement. */
+}
+
+#contenu
+{
+    display: flex;
+    flex-direction: row; /* les 2 blocs conteneurs1 (textes) et 2 (images), seront donc côte à côte */
+    padding-top : 2em;
+    border: solid 1px red;
+
+}
+
+#conteneur1
+{
+    display: flex;
+    flex-direction: column; /* les contenus textes seront mises en colonnes */
+    vertical-align: top;
+    width: 50%; /* les contenus textes occuperont 50% de l'espace du parent #contenu */
+    border: solid 1px cyan;
+}
+
+#conteneur2
+{
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    text-align: right;
+    width: 50%; /* les contenus images occuperont 50% de l'espace du parent #contenu */
+    border: solid 1px yellow;
+}
+
+#conteneur2 p
+{
+    padding-bottom: 1em;    /* une ligne vide sous la légende avant d'enchainer sur l'image suivante */
+    font-style: italic;
+}
+ul {   /* les items de la liste sont précédés par une demi-ligne d'espace avant et après*/
+    padding-top : 0.5em;
+    padding-bottom : 0.5em;
+}
+
+#effectif {
+    padding-top : 0.5em;
+    border-top : 1px solid black;
+}

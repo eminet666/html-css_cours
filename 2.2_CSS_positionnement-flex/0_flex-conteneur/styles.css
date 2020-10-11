@@ -1,9 +1,0 @@
-.box {
-     display: flex;
-}
-
-.box div {
-	background-color: yellow;
-	border : 1;
-	margin: 10px;
-}

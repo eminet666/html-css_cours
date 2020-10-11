@@ -1,0 +1,46 @@
+<!-- flex :
+- tuto : https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Concepts_de_base_flexbox
+- tuto : https://la-cascade.io/css-flexbox-et-lalignement-guide-complet/
+- jeu :  https://flexboxfroggy.com/#fr https://cssgridgarden.com/#fr
+
+- flex-basis :  https://developer.mozilla.org/fr/docs/Web/CSS/flex-basis
+- flex-grow :   https://developer.mozilla.org/fr/docs/Web/CSS/flex-grow
+- flex-shrink : https://developer.mozilla.org/fr/docs/Web/CSS/flex-shrink
+- flex :        https://developer.mozilla.org/fr/docs/Web/CSS/flex (propriete raccourcie)
+ -->
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<style>
+			body { background-color: silver; }
+			#conteneur {
+				background-color: gray;
+				display: flex;
+				flex-flow: row wrap;
+			}
+			#conteneur div { background-color: yellow; border: dotted black 1px; width: 100px; }
+
+			/* flex-basis = taille initiale pour un élément flexible : valeurs possibles
+			- auto = taille contenu si pas définie
+			- 0 = taille contenu
+			- px = valeur en unité de mesure
+			- initial = valeur par défaut même si valeur parent (non supporté par IE11); */
+			#box2 { flex-basis: auto; }
+
+		</style>
+	</head>
+
+	<body>
+
+		<div id="conteneur">
+	          <div>One</div>
+	          <div id="box2">Two</div>
+	          <div>Three</div>
+			  <div>Four</div>
+			  <div>Five</div>
+			  <div>Six</div>
+        </div>
+
+	</body>
+</html>
