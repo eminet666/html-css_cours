@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <style>
+	.container {
+	display: flex;
+	}
+	.item {
+	flex-grow: 1;
+	height: 100px;
+    background-color: silver;
+    border: dotted black 1px;
+	}
+	.item + .item {	/* + pour eviter gap colonne 1 */
+	margin-left: 2%;
+	}
+
+	</style>
+
+</head>
+
+<body >
+
+	<div class="container">
+		<div class="item"></div>
+		<div class="item"></div>
+		<div class="item"></div>
+	</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+FLEXBOX
+- exemples
+https://tobiasahlin.com/blog/common-flexbox-patterns/
+
+CSSGRID
+https://jenseign.com/apprendre-html-css/pratique-exemple/portfolio-responsive-s01e01-css-grid/
+https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/
+
+https://webdesign.tutsplus.com/tutorials/css-grid-layout-going-responsive--cms-27270
+
+https://webdesign.tutsplus.com/fr/tutorials/create-a-css-grid-image-gallery-with-blur-effect-and-interaction-media-queries--cms-32287
+
+RWD Responsive W3
+https://www.w3schools.com/css/css_rwd_templates.asp

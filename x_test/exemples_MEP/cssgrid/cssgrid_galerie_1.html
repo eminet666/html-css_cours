@@ -1,0 +1,59 @@
+<!-- source : https://jenseign.com/apprendre-html-css/pratique-exemple/portfolio-responsive-s01e01-css-grid/ -->
+<!-- 3 formats M : 400x600 (base) / S : 400x288 (M/2 - gap : 24px) / L : 824x600 (Mx2 + gap) 824) -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <style>
+    body{
+      margin:24px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, 400px);
+      grid-auto-rows: 288px;
+      gap: 24px;
+      grid-auto-flow: row dense;
+    }
+
+    .s{
+      grid-column-end: span 1;
+      grid-row-end:span 1;
+    }
+
+    .m{
+      grid-column-end: span 1;
+      grid-row-end:span 2;
+    }
+
+    .l{
+      grid-column-end: span 2;
+      grid-row-end:span 2;
+    }
+	</style>
+
+</head>
+
+<body >
+
+    <div class="grid">
+        <img src="https://dummyimage.com/824x600/1FD0C0/fff&text=%20" class="l" alt="app">
+        <img src="https://dummyimage.com/400x600/FF5046/fff&text=%20" class="m" alt="affiche">
+        <img src="https://dummyimage.com/400x288/FFDE13/fff&text=%20" class="s" alt="site">
+        <img src="https://dummyimage.com/824x600/1FD0C0/fff&text=%20" class="l" alt="app">
+        <img src="https://dummyimage.com/400x600/FF5046/fff&text=%20" class="m" alt="affiche">
+        <img src="https://dummyimage.com/400x288/FFDE13/fff&text=%20" class="s" alt="site">
+        <img src="https://dummyimage.com/824x600/1FD0C0/fff&text=%20" class="l" alt="app">
+        <img src="https://dummyimage.com/400x600/FF5046/fff&text=%20" class="m" alt="affiche">
+        <img src="https://dummyimage.com/400x288/FFDE13/fff&text=%20" class="s" alt="site">
+    </div>
+
+</body>
+
+</html>
