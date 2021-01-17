@@ -1,0 +1,59 @@
+<!--
+https://developer.mozilla.org/fr/docs/Web/API/CSS_Object_Model/Managing_screen_orientation
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        /* D'abord, on définit les styles communs */
+        html, body { width : 100%; height: 100%; margin: 0; padding: 0;}
+        body { border: 1px solid black; -moz-box-sizing: border-box; box-sizing: border-box; }
+        p { font   : 1em sans-serif; margin : 0; padding: .5em; }
+        ul { list-style: none; font   : 1em monospace; margin : 0; padding: .5em;
+          -moz-box-sizing: border-box; box-sizing: border-box; background: black;
+        }
+        li { display: inline-block; margin : 0; padding: 0.5em; background: white; }
+
+        /* En mode portrait, on veut la barre d'outils en haut */
+        @media screen and (orientation: portrait) {
+           body { background-color: DeepPink; }
+           #toolbar { width: 100%; }
+
+        }
+
+        /* En mode paysage, on veut la barre d'outils à gauche */
+        @media screen and (orientation: landscape) {
+            body { background-color: Blue; }
+            #toolbar { position: fixed; width: 2.65em; height: 100%; }
+            p { margin-left: 2em; }
+            li + li { margin-top: .5em; }
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <ul id="toolbar">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+       Duis lacinia nisi nec sem viverra vitae fringilla nulla ultricies.
+       In ac est dolor, quis tincidunt leo.
+       Cras commodo quam non tortor consectetur eget rutrum dolor ultricies.
+       Ut interdum tristique dapibus. Nullam quis malesuada est.
+   </p>
+
+
+</body>
+
+</html>
