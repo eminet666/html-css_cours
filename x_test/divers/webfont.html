@@ -1,0 +1,57 @@
+<!-- https://www.w3schools.com/css/css3_fonts.asp -->
+<!--
+- TrueType Fonts (TTF) (font standard late 1980s, by Apple and Microsoft)
+most common font format for both the Mac OS and Microsoft Windows operating systems.
+
+- OpenType Fonts (OTF) : format for scalable computer fonts
+built on TrueType / Microsoft / used commonly
+
+- Web Open Font Format (WOFF) : font format for use in web pages.
+2009 / now W3C Recommendation
+essentially OpenType or TrueType with compression and additional metadata.
+
+- The Web Open Font Format (WOFF 2.0) : better compression than WOFF 1.0.
+
+- SVG Fonts/Shapes : allow SVG to be used as glyphs when displaying text.
+
+- Embedded OpenType Fonts (EOT) : compact form of OpenType fonts
+by Microsoft for use as embedded fonts on web pages.
+-->
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+        <style>
+            @font-face {
+                font-family: myFirstFont;
+                src: url(SansationLight.woff);
+            }
+            @font-face {
+                font-family: myFirstFont;
+                src: url(SansationBold.woff);
+                font-weight: bold;
+            }
+
+            * {
+                font-family: myFirstFont;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1>The @font-face Rule</h1>
+
+        <div>
+            With CSS, websites can use <b>fonts other than the pre-selected "web-safe" fonts</b>.
+        </div>
+
+        <p><b>Note:</b> Internet Explorer 8 and earlier, do not support the @font-face rule.</p>
+
+    </body>
+
+</html>

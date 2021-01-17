@@ -1,0 +1,70 @@
+<!-- https://www.alsacreations.com/article/lire/1490-Comprendre-le-Viewport-dans-le-Web-mobile.html -->
+<!-- SURFACES
+- surface physique : nb physique pixels de la matrice de l'écran = définition
+ex : 320x480/640x960/640x1136/750x1334 iPhone 3/4/5/6/6+, 768x1024/1536x2048 iPad2/3-4-5-Air
+- surface utilisable (en "pixels CSS") : pixels virtuels que le terminal pense avoir
+device-width/device-height ou screen.width/screen.height ou encore "ça dépend"
+MAIS surface physique & utilisable ne correspondend (ex : mobiles "retina")
+= un "pixel CSS" n'est donc pas égal à un pixel physique.
+ex : 320x480/320x480/320x568/375x667/414x736 iPhone 3/4/5/6/6+, 768x1024px iPad 2/3
+Rem : iphone device-width invariable en portrait et en paysage.
+
+VIEWPORT
+par défaut, le viewport ne vaut ni la surface physique, ni la surface utilisable
+>> surface physique => caler n'importe quelle page par niveau de dézoom
+valeur initiale ne dépend pas du terminal, mais du navigateur mobile (modifiable par l'utilisateur)
+ex : 800px Android 1/2/3, 980px Android 4, 850px Opera mini,
+ex : 980px Opera mobile, 980px Safari mobile, 1024px IE mobile
+
+ZOOM INITIAL
+par défaut de manière à ce que toute la surface entre dans celle de l'écran.
+= device-width / viewport
+ex: iPhone 5 980px dans 320px de largeur (physiquement 640px!) 320/980=0.326x.
+
+BALISE <meta> viewport
+pour éviter ce zoom = imposer la taille de la surface du viewport  d'un mobile
+Pas en CSS, mais en... HTML = <meta>
+ex : (dé)zoom = 320/980 = 0.3 => navigateur mobile considère fenêtre 980px large
+ex : (dé)zoom = 1 => navigateur mobile considère fenêtre 320px large
+syntaxe : <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+AUTRES VALEURS
+- width : largeur de fenêtre viewport (par exemple width="device-width")
+- height : hauteur de fenêtre viewport (par exemple height="device-height")
+- initial-scale : niveau de zoom initial (par exemple initial-scale="1.0")
+- minimum-scale : niveau de zoom minimal (par exemple minimum-scale="0.5")
+- maximum-scale : niveau de zoom maximal (par exemple maximum-scale="3.0").
+rem : la valeur "1.0" interdit le zoom et peut rendre pages inaccessibles
+- user-scalable : possibilité à l'utilisateur de zoomer (par exemple user-scalable="yes"). Attention, la valeur "no" interdit le zoom et peut rendre vos pages inaccessibles
+
+STANDARD (balise <meta> appartient à apple)
+@viewport {
+   width: device-width; /* largeur du viewport */
+   zoom: 1;
+} -->
+
+<!-- CSS DE BASE POUR MOBILE
+https://www.alsacreations.com/astuce/lire/1177-une-feuille-de-styles-de-base-pour-le-web-mobile.html
+
+0_fixer le VIEWPORT
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+= éviter le redimensionnement automatique de la mise en page
+(court-cicuite le viewport par défaut trop large)
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+
+
+</body>
+
+</html>
