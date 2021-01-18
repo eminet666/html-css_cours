@@ -48,10 +48,16 @@ https://github.com/metafizzy/flickity-fullscreen#install
             }
 
             .carousel-cell img {
-              object-fit: contain;
-              max-width: 100%;
-              height: auto;
+              max-height: 100%;
+              width: auto;
             }
+
+            .legende {
+                position: absolute;
+                bottom: 5px;
+            }
+            .blanc { color: white;}
+            .noir { color: black;}
 
         </style>
     </head>
@@ -61,6 +67,7 @@ https://github.com/metafizzy/flickity-fullscreen#install
         <div class="carousel" data-flickity='{ "setGallerySize": false, "lazyLoad": 1, "pageDots": false  }'>
               <div class="carousel-cell">
                   <img class="carousel-cell-image" data-flickity-lazyload="https://picsum.photos/1280/720/?image=6" />
+                  <p class="legende blanc">légende</p>
               </div>
               <div class="carousel-cell">
                   <img class="carousel-cell-image" data-flickity-lazyload="https://picsum.photos/1280/720/?image=69" />
