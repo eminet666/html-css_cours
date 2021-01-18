@@ -3,6 +3,7 @@
 # tests
 [carrousel_100h](https://eminet666.github.io/html-css_cours/x_test/carrousel/carrousel_100h.html)
 [carrousel_fs](https://eminet666.github.io/html-css_cours/x_test/carrousel/carrousel_fs.html)
+[carrousel_bg](https://eminet666.github.io/html-css_cours/x_test/carrousel/carrousel_bg.html)
 
 
 ## ressources :

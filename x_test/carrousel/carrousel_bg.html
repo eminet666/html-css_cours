@@ -1,0 +1,77 @@
+<!--
+https://flickity.metafizzy.co/
+https://github.com/metafizzy/flickity
+https://codepen.io/desandro/pen/dPdyJK
+https://flickity.metafizzy.co/options.html
+https://github.com/metafizzy/flickity-fullscreen#install
+-->
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- FLICKITY -->
+        <!-- CSS -->
+        <link rel="stylesheet" href="./flickity.min.css" media="screen">
+        <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+        <!-- JavaScript -->
+        <script src="./flickity.pkgd.min.js"></script>
+        <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
+        <script src="./bg-lazyload.js"></script>
+        <style>
+            /* external css: flickity.css */
+
+            * { box-sizing: border-box; margin: 0;}
+            html, body {
+              height: 100%;
+            }
+            body { font-family: sans-serif; }
+
+            .carousel {
+              background: #FAFAFA;
+              height: 100%;
+            }
+
+            .carousel-cell {
+                width: 100%;
+                height: 100%;
+              margin-right: 10px;
+              /* background: #8C8; */
+              border-radius: 5px;
+              background-position: center center;
+              background-size: cover;
+              /* center images in cells with flexbox */
+              display: flex;
+              align-items: end;
+              justify-content: center;
+            }
+
+            .blanc { color: white;}
+            .noir { color: black;}
+
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Flickity HTML init -->
+        <div class="carousel" data-flickity='{ "bgLazyLoad": true, "pageDots": false, "lazyLoad": 1 }'>
+          <div class="carousel-cell" data-flickity-bg-lazyload="https://unsplash.it/640/482/?random">
+              <p class="blanc">légende</p>
+          </div>
+          <div class="carousel-cell" data-flickity-bg-lazyload="https://unsplash.it/640/482/?random"></div>
+          <div class="carousel-cell" data-flickity-bg-lazyload="https://unsplash.it/640/482/?random"></div>
+          <div class="carousel-cell" data-flickity-bg-lazyload="https://unsplash.it/640/483/?random"></div>
+          <div class="carousel-cell" data-flickity-bg-lazyload="https://unsplash.it/640/484/?random"></div>
+          <div class="carousel-cell" data-flickity-bg-lazyload="https://unsplash.it/640/485/?random"></div>
+          <div class="carousel-cell" data-flickity-bg-lazyload="https://unsplash.it/640/486/?random"></div>
+        </div>
+        <script>
+
+        </script>
+    </body>
+
+</html>
