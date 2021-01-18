@@ -1,8 +1,8 @@
 # html-css_cours
 
 # tests
-[carrousel 100h](https://eminet666.github.io/html-css_cours/x_test/carrousel/carrousel_100h.html)
-[carrousel fs](https://eminet666.github.io/html-css_cours/x_test/caroussel/carrousel_fs.html)
+[carrousel_100h](https://eminet666.github.io/html-css_cours/x_test/carrousel/carrousel_100h.html)
+[carrousel_fs](https://eminet666.github.io/html-css_cours/x_test/carrousel/carrousel_fs.html)
 
 
 ## ressources :
