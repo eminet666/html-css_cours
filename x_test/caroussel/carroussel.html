@@ -1,0 +1,165 @@
+<!--
+https://flickity.metafizzy.co/
+https://github.com/metafizzy/flickity
+https://codepen.io/desandro/pen/dPdyJK
+https://flickity.metafizzy.co/options.html
+https://github.com/metafizzy/flickity-fullscreen#install
+-->
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- FLICKITY -->
+        <!-- CSS -->
+        <link rel="stylesheet" href="./flickity.min.css" media="screen">
+        <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+        <!-- JavaScript -->
+        <script src="./flickity.pkgd.min.js"></script>
+        <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
+        <!-- fullscreen complement -->
+        <link rel="stylesheet" href="./fullscreen.css">
+        <script src="./fullscreen.js"></script>
+        <!-- <link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css">
+        <script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script> -->
+
+        <style>
+            /* external css: flickity.css */
+            * { box-sizing: border-box; }
+            body { font-family: sans-serif; }
+
+            /* prevent vertical scroll bar glitch */
+            html { overflow-y: scroll; }
+            .carousel {
+              background: #EEE;
+            }
+            .carousel-cell {
+              width: 100%;
+              height: 200px;
+              margin-right: 10px;
+              background: #8C8;
+              border-radius: 5px;
+              counter-increment: gallery-cell;
+            }
+
+            /* cell number */
+            .carousel-cell:before {
+              display: block;
+              text-align: center;
+              content: counter(gallery-cell);
+              line-height: 200px;
+              font-size: 80px;
+              color: white;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Flickity HTML init -->
+        <div class="carousel"
+          data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" alt="submerged" />
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" alt="look-out" />
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
+          <img src="https://dummyimage.com/824x600/FF0066/fff&text=%20">
+          <img src="https://dummyimage.com/824x600/FF6600/fff&text=%20">
+          <img src="https://dummyimage.com/824x600/66FF00/fff&text=%20">
+          <img src="https://dummyimage.com/824x600/00FF66/fff&text=%20">
+          <img src="https://dummyimage.com/824x600/0066FF/fff&text=%20">
+        </div>
+
+        <script>
+            var flky = new Flickity( '.carroussel', {
+              // options, defaults listed
+
+              accessibility: true,
+              // enable keyboard navigation, pressing left & right keys
+
+              adaptiveHeight: false,
+              // set carousel height to the selected slide
+
+              autoPlay: false,
+              // advances to the next cell
+              // if true, default is 3 seconds
+              // or set time between advances in milliseconds
+              // i.e. `autoPlay: 1000` will advance every 1 second
+
+              cellAlign: 'center',
+              // alignment of cells, 'center', 'left', or 'right'
+              // or a decimal 0-1, 0 is beginning (left) of container, 1 is end (right)
+
+              cellSelector: undefined,
+              // specify selector for cell elements
+
+              contain: false,
+              // will contain cells to container
+              // so no excess scroll at beginning or end
+              // has no effect if wrapAround is enabled
+
+              draggable: '>1',
+              // enables dragging & flicking
+              // if at least 2 cells
+
+              dragThreshold: 3,
+              // number of pixels a user must scroll horizontally to start dragging
+              // increase to allow more room for vertical scroll for touch devices
+
+              freeScroll: false,
+              // enables content to be freely scrolled and flicked
+              // without aligning cells
+
+              friction: 0.2,
+              // smaller number = easier to flick farther
+
+              groupCells: false,
+              // group cells together in slides
+
+              initialIndex: 0,
+              // zero-based index of the initial selected cell
+
+              lazyLoad: true,
+              // enable lazy-loading images
+              // set img data-flickity-lazyload="src.jpg"
+              // set to number to load images adjacent cells
+
+              percentPosition: true,
+              // sets positioning in percent values, rather than pixels
+              // Enable if items have percent widths
+              // Disable if items have pixel widths, like images
+
+              prevNextButtons: true,
+              // creates and enables buttons to click to previous & next cells
+
+              pageDots: true,
+              // create and enable page dots
+
+              resize: true,
+              // listens to window resize events to adjust size & positions
+
+              rightToLeft: false,
+              // enables right-to-left layout
+
+              setGallerySize: true,
+              // sets the height of gallery
+              // disable if gallery already has height set with CSS
+
+              watchCSS: false,
+              // watches the content of :after of the element
+              // activates if #element:after { content: 'flickity' }
+
+              wrapAround: false
+              // at end of cells, wraps-around to first for infinite scrolling
+
+            });
+        </script>
+    </body>
+
+</html>

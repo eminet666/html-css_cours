@@ -1,0 +1,121 @@
+<!--
+https://flickity.metafizzy.co/
+https://github.com/metafizzy/flickity
+https://codepen.io/desandro/pen/dPdyJK
+https://flickity.metafizzy.co/options.html
+https://github.com/metafizzy/flickity-fullscreen#install
+-->
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- FLICKITY -->
+        <!-- CSS -->
+        <link rel="stylesheet" href="./flickity.min.css" media="screen">
+        <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+        <!-- JavaScript -->
+        <script src="./flickity.pkgd.min.js"></script>
+        <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
+        <!-- fullscreen complement -->
+        <link rel="stylesheet" href="./fullscreen.css">
+        <script src="./fullscreen.js"></script>
+        <!-- <link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css">
+        <script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script> -->
+
+        <style>
+            /* external css: flickity.css, fullscreen.css */
+            * { box-sizing: border-box; }
+            body { font-family: sans-serif; }
+
+            .carousel {
+              background: #222;
+            }
+
+            .carousel-cell {
+              width: 100%;
+              height: 300px;
+              margin-right: 10px;
+              /* center images in cells with flexbox */
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+
+            .carousel.is-fullscreen .carousel-cell {
+              height: 100%;
+            }
+
+            .carousel-cell-image {
+              display: block;
+              max-height: 100%;
+            }
+
+            .carousel.is-fullscreen .carousel-cell-image {
+              max-width: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Flickity HTML init -->
+        <div class="carousel" data-flickity='{ "fullscreen": true, "lazyLoad": 1 }'>
+              <div class="carousel-cell">
+                <img class="carousel-cell-image"
+                  data-flickity-lazyload="https://picsum.photos/800/600" />
+              </div>
+              <div class="carousel-cell">
+                <img class="carousel-cell-image"
+                  data-flickity-lazyload="https://picsum.photos/540/720/?image=696" />
+              </div>
+              <div class="carousel-cell">
+                <img class="carousel-cell-image"
+                  data-flickity-lazyload="https://picsum.photos/720/540/?image=56" />
+              </div>
+              <div class="carousel-cell">
+                <img class="carousel-cell-image"
+                  data-flickity-lazyload="https://picsum.photos/800/500/?image=1084" />
+              </div>
+              <div class="carousel-cell">
+                <img class="carousel-cell-image"
+                  data-flickity-lazyload="https://picsum.photos/720/540/?image=1080" />
+              </div>
+              <div class="carousel-cell">
+                <img class="carousel-cell-image"
+                  data-flickity-lazyload="https://picsum.photos/640/640/?image=1074" />
+              </div>
+              <div class="carousel-cell">
+                <img class="carousel-cell-image"
+                  data-flickity-lazyload="https://picsum.photos/720/540/?image=1069" />
+              </div>
+              <div class="carousel-cell">
+                <img class="carousel-cell-image"
+                  data-flickity-lazyload="https://picsum.photos/800/500/?image=1062" />
+              </div>
+              <div class="carousel-cell">
+                <img class="carousel-cell-image"
+                  data-flickity-lazyload="https://picsum.photos/720/540/?image=1002" />
+              </div>
+              <div class="carousel-cell">
+                <img class="carousel-cell-image"
+                  data-flickity-lazyload="https://picsum.photos/640/640/?image=935" />
+              </div>
+              <div class="carousel-cell">
+                <img class="carousel-cell-image"
+                  data-flickity-lazyload="https://picsum.photos/720/540/?image=855" />
+              </div>
+              <div class="carousel-cell">
+                <img class="carousel-cell-image"
+                  data-flickity-lazyload="https://picsum.photos/640/640/?image=824" />
+              </div>
+        </div>
+
+        <script>
+
+        </script>
+    </body>
+
+</html>
