@@ -30,16 +30,18 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_template1_flexbox
 
         /* Container for flexboxes */
         .row {
+            display: -webkit-flex;
             display: flex;
-            flex-direction: row;
-            margin-bottom: 10px; margin-top: 10px;
         }
 
         /* Create three equal columns that sits next to each other */
         .column {
+            -webkit-flex: 1;
+            -ms-flex: 1;
             flex: 1;
             padding: 10px;
             height: 300px;
+            /* Should be removed. Only for demonstration */
         }
 
         /* Style the footer */
@@ -52,6 +54,7 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_template1_flexbox
         /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
         @media (max-width: 600px) {
             .row {
+                -webkit-flex-direction: column;
                 flex-direction: column;
             }
         }
@@ -59,6 +62,11 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_template1_flexbox
 </head>
 
 <body>
+
+    <h2>CSS Template using Flexbox</h2>
+    <p>In this example, we have created a header, three equal columns and a footer. On smaller screens, the columns will stack on top of each other.</p>
+    <p>Resize the browser window to see the responsive effect.</p>
+    <p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 eand earlier versions.</p>
 
     <div class="header">
         <h2>Header</h2>
