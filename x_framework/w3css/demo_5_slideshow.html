@@ -1,0 +1,111 @@
+<!-- https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_navbar_hide -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+        img { width: 100%; height: auto;}
+        </style>
+    <head>
+
+    <body>
+        <nav class="w3-top">
+         <div class="w3-bar w3-indigo">
+              <a href="#" class="w3-bar-item w3-button">Home</a>
+              <a href="./slideshow.html" class="w3-bar-item w3-button w3-hide-small">Philosophes</a>
+              <a href="#" class="w3-bar-item w3-button w3-hide-small">Tragédiens</a>
+              <a href="#" class="w3-bar-item w3-button w3-hide-small">Artistes</a>
+              <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+         </div>
+
+         <div id="demo" class="w3-bar-block w3-indigo w3-hide w3-hide-large w3-hide-medium">
+              <a href="./slideshow.html" class="w3-bar-item w3-button">Philosophes</a>
+              <a href="#" class="w3-bar-item w3-button">Tragédiens</a>
+              <a href="#" class="w3-bar-item w3-button">Artistes</a>
+        </div>
+    </nav>
+
+        <!-- <header class="w3-container" >
+            <header class="w3-display-container w3-blue" >
+                <h2 class="w3-display-bottommiddle">Personnages illustres</h2>
+            </header>
+        </header> -->
+        <header class="w3-display-container w3-padding-48 w3-blue">
+          <h1 class="w3-display-middle">Personnages grecs illustres</h1>
+        </header>
+
+        <h2 class="w3-center">Philosophes</h2>
+        <section class="w3-container w3-cell-row">
+                <article class="w3-third w3-cell w3-mobile w3-light-gray w3-padding-small">
+                    <a href="./slideshow.html">
+                        <div class="w3-display-container" >
+                             <img src="../images/socrate.jpg" />
+                             <h2 class="w3-display-bottommiddle w3-opacity w3-text-white">Socrate</h2>
+                        </div>
+                    </a>
+                    <p>Socrate ...</p>
+                </article>
+
+                <article class="w3-third w3-cell w3-mobile w3-light-gray w3-padding-small">
+                    <div class="w3-display-container" >
+                         <img src="../images/platon.jpg" />
+                         <h2 class="w3-display-bottommiddle w3-opacity w3-text-white">Platon</h2>
+                    </div>
+                    <p>Platon ...</p>
+                </article>
+
+                <article class="w3-third w3-cell w3-mobile w3-light-gray w3-padding-small">
+                    <div class="w3-display-container" >
+                         <img src="../images/Aristote.jpg" />
+                         <h2 class="w3-display-bottommiddle w3-opacity w3-text-white">Aristote</h2>
+                    </div>
+                    <p>Aristote ...</p>
+                </article>
+
+        </section>
+
+        <h2 class="w3-center">Tragédiens</h2>
+        <section class="w3-container  w3-cell-row ">
+            <article class="w3-third w3-cell w3-mobile w3-light-gray w3-padding-small">
+                <div class="w3-display-container" >
+                     <img src="../images/sophocle.jpg" />
+                     <h2 class="w3-display-bottommiddle w3-opacity w3-text-white">Sophocle</h2>
+                </div>
+                <p>Sophocle ...</p>
+            </article>
+
+            <article class="w3-third w3-cell w3-mobile w3-light-gray w3-padding-small">
+                <div class="w3-display-container" >
+                     <img src="../images/eschyle.jpg" />
+                     <h2 class="w3-display-bottommiddle w3-opacity w3-text-white">Eschyle</h2>
+                </div>
+                <p>Eschyle ...</p>
+            </article>
+
+            <article class="w3-third w3-cell w3-mobile w3-light-gray w3-padding-small">
+                <div class="w3-display-container" >
+                     <img src="../images/euripide.jpg" />
+                     <h2 class="w3-display-bottommiddle w3-opacity w3-text-white">Euripide</h2>
+                </div>
+                <p>Euripides ...</p>
+            </article>
+        </section>
+
+        <footer class="w3-container w3-margin-top w3-blue">
+          <h3>Footer</h3>
+      </footer>
+
+        <script>
+        function myFunction() {
+          var x = document.getElementById("demo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else {
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+        </script>
+
+    </body>
+</html>
