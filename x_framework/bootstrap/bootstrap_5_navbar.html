@@ -1,0 +1,156 @@
+<!-- https://getbootstrap.com/docs/4.0/components/navbar/ -->
+<!-- https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp -->
+<!-- https://tutowebdesign.com/creer-des-menus-de-navigation-avec-bootstrap-4.php -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <style>
+            header, footer { background-color: slategray; }
+            .gris { background: silver; }
+            .blanc { color: white; }
+            .noir { color: black;}
+            .innertext { position: absolute; bottom: 0; font-weight: 500; left: 50%; transform: translate(-50%, 0);}
+        </style>
+
+    <head>
+
+    <body>
+
+        <nav class="navbar navbar-light bg-primary navbar-expand-sm">
+            <a class="navbar-brand" href="#"><img src="../images/athena_32x32.png" /> Athènes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Philosophes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tragiques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Comiques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sculpteurs</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="container-fluid text-center">
+            <h1>Hommes illustres</h1>
+        </header>
+
+        <div class="container-fluid">
+            <h2>Philosophes</h2>
+
+            <section class="row">
+                <article class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="m-1 gris">
+                        <div style="position: relative">
+                            <img class="img-fluid mx-auto d-block" src="../images/socrate.jpg" />
+                            <h3 class="innertext blanc">Socrate</h3>
+                        </div>
+                        <p class="d-none d-sm-block">Socrate ...</p>
+                    </div>
+                </article>
+
+                <article class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="m-1 gris">
+                        <div style="position: relative">
+                            <img class="img-fluid mx-auto d-block" src="../images/platon.jpg" />
+                            <h3 class="innertext blanc">Platon</h3>
+                        </div>
+                        <p class="d-none d-sm-block">Platon ...</p>
+                    </div>
+                </article>
+
+                <article class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="m-1 gris">
+                        <div style="position: relative">
+                            <img class="img-fluid mx-auto d-block" src="../images/aristote.jpg" />
+                            <h3 class="innertext blanc">Aristote</h3>
+                        </div>
+                        <p class="d-none d-sm-block">Aristote ...</p>
+                    </div>
+                </article>
+
+                <article class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="m-1 gris">
+                        <div style="position: relative">
+                            <img class="img-fluid mx-auto d-block" src="../images/aristote.jpg" />
+                            <h3 class="innertext blanc">Aristote</h3>
+                        </div>
+                        <p class="d-none d-sm-block">Aristote ...</p>
+                    </div>
+                </article>
+
+            </section>
+
+            <h2>Tragiques</h2>
+            <section class="row">
+
+                <article class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="m-1 gris">
+                        <div style="position: relative">
+                            <img class="img-fluid mx-auto d-block" src="../images/sophocle.jpg" />
+                            <h3 class="innertext blanc">Sophocle</h3>
+                        </div>
+                        <p class="d-none d-sm-block">Sophocle ...</p>
+                    </div>
+                </article>
+
+                <article class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="m-1 gris">
+                        <div style="position: relative">
+                            <img class="img-fluid mx-auto d-block" src="../images/eschyle.jpg" />
+                            <h3 class="innertext blanc">Eschyle</h3>
+                        </div>
+                        <p class="d-none d-sm-block">Eschyle ...</p>
+                    </div>
+                </article>
+                
+                <article class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="m-1 gris">
+                        <div style="position: relative">
+                            <img class="img-fluid mx-auto d-block" src="../images/euripide.jpg" />
+                            <h3 class="innertext blanc">Euripide</h3>
+                        </div>
+                        <p class="d-none d-sm-block">Euripide ...</p>
+                    </div>
+                </article>
+
+                <article class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="m-1 gris">
+                        <div style="position: relative">
+                            <img class="img-fluid mx-auto d-block" src="../images/euripide.jpg" />
+                            <h3 class="innertext blanc">Euripide</h3>
+                        </div>
+                        <p class="d-none d-sm-block">Euripide ...</p>
+                    </div>
+                </article>
+            </section>
+
+        </div>
+
+        <footer class="container-fluid text-center">
+            <h3>Footer</h3>
+        </footer>
+
+    </body>
+
+</html>

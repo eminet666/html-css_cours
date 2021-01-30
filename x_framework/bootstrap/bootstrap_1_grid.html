@@ -1,0 +1,99 @@
+<!-- https://www.w3schools.com/bootstrap/bootstrap_grid_basic.asp -->
+<!-- https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp -->
+<!-- 
+GRID CLASSES
+The Bootstrap 4 grid system has five classes:
+    .col- (extra small devices - screen width less than 576px)
+    .col-sm- (small devices - screen width equal to or greater than 576px)
+    .col-md- (medium devices - screen width equal to or greater than 768px)
+    .col-lg- (large devices - screen width equal to or greater than 992px)
+    .col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+The classes above can be combined to create more dynamic and flexible layouts.
+Tip: Each class scales up, so if you wish to set the same widths for sm and md, you only need to specify sm.
+
+GRID RULES
+    - Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) 
+    - Use rows to create horizontal groups of columns
+    - Content should be placed within columns, and only columns may be immediate children of rows
+    - Columns create gutters (gaps between column content) via padding.
+    - Grid columns are created by specifying the number of 12 available columns you wish to span. 
+    For example, three equal columns would use three .col-4
+    - Column widths are in percentage, so they are always fluid and sized relative to their parent element
+    - The biggest difference between Bootstrap 3 and Bootstrap 4 is that Bootstrap 4 now uses flexbox, instead of floats.
+
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <style>
+        header,
+        footer {
+            background-color: slategray;
+        }
+
+        article {
+            background-color: silver;
+        }
+    </style>
+
+    <head>
+
+    <body>
+
+        <header class="container-fluid">
+            <h1>Header</h1>
+        </header>
+
+        <div class="container-fluid">
+            <h2>Philosophes</h2>
+            <section class="row">
+                <article class="col-4">
+                    <h2>Socrate</h2>
+                    <p>Socrate ...</p>
+                </article>
+                <article class="col-4">
+                    <h2>Platon</h2>
+                    <p>Platon ...</p>
+                </article>
+                <article class="col-4">
+                    <h2>Aristote</h2>
+                    <p>Aristote ...</p>
+                </article>
+            </section>
+
+            <h2>Tragiques</h2>
+            <section class="row">
+                <article class="col-4">
+                    <h2>Sophocle</h2>
+                    <p>Sophocle ...</p>
+                </article>
+                <article class="col-4">
+                    <h2>Eschyle</h2>
+                    <p>Eschyle ...</p>
+                </article>
+                <article class="col-4">
+                    <h2>Euripide</h2>
+                    <p>Euripide ...</p>
+                </article>
+            </section>
+        </div>
+
+        <footer class="container-fluid">
+            <h3>Footer</h3>
+        </footer>
+
+    </body>
+
+</html>

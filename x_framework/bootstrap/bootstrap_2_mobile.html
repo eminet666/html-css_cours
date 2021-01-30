@@ -1,0 +1,110 @@
+<!-- https://www.w3schools.com/bootstrap3/bootstrap_grid_examples.asp -->
+<!-- https://www.w3schools.com/bootstrap3/bootstrap_grid_system.asp -->
+<!-- 
+
+The following table summarizes how the Bootstrap 3 grid system works across different screen sizes:
+  	            Extra small (<573px) 	Small (>=573px) 	Medium (>=738px) 	Large (>=993px) 	Extra Large (>=1300px)
+Class prefix 	.col- 	                .col-sm- 	        .col-md- 	        .col-lg- 	        .col-xl-
+Grid behaviour 	Horizontal at all times Collapsed to start, horizontal above breakpoints 	
+Container width None (auto) 	        530px 	            730px 	            930px           	1130px
+Suitable for 	Portrait phones 	    Landscape phones 	Tablets 	    Laptops 	            Laptops and Desktops
+
+-->
+<!-- http://monbootstrap.fr/spacing-margin-et-padding-a-la-carte/ -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        header,
+        footer {
+            background-color: slategray;
+        }
+
+        article {
+            background-color: silver;
+        }
+    </style>
+
+    <head>
+
+    <body onresize="checkDimensions()">
+
+        <header class="container-fluid">
+            <h1>Header</h1>
+        </header>
+
+        <div class="container-fluid">
+            <h2>Philosophes</h2>
+            <section class="row">
+
+                <article class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <h3>Socrate</h3>
+                    <p>Socrate ...</p>
+                </article>
+                <article class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <h3>Platon</h3>
+                    <p>Platon ...</p>
+                </article>
+                <article class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <h3>Aristote</h3>
+                    <p>Aristote ...</p>
+                </article>
+                <article class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <h3>Aristote</h3>
+                    <p>Aristote ...</p>
+                </article>
+            </section>
+
+            <h2>Tragiques</h2>
+            <section class="row">
+
+                <article class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <h3>Sophocle</h3>
+                    <p>Sophocle ...</p>
+                </article>
+                <article class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <h3>Eschyle</h3>
+                    <p>Eschyle ...</p>
+                </article>
+                <article class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <h3>Euripide</h3>
+                    <p>Euripide ...</p>
+                </article>
+                <article class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <h3>Euripide</h3>
+                    <p>Euripide ...</p>
+                </article>
+            </section>
+        </div>
+
+        <footer class="container-fluid">
+            <h3>Footer</h3>
+        </footer>
+
+        <script>
+            function checkDimensions() {
+                var l = screen.availWidth;
+                if (l < 573) l = "XS <576px";
+                else if(l < 738) l="SM <738px";
+                else if(l < 993) l="MD <992px";
+                else if(l < 1300) l="LG <1300px";
+                else l="XL > 1300px" ;
+                console.log(l);
+            }
+        </script>
+
+
+    </body>
+
+</html>
