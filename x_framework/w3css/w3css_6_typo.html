@@ -1,10 +1,13 @@
-<!-- https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_navbar_hide -->
+<!-- https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
 <!DOCTYPE html>
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
         <style>
+        body { font-family: "Noto Sans", 'Trebuchet MS', sans-serif;}
+        h1 { font-family: Oswald, sans-serif; }
         img { width: 100%; height: auto;}
         </style>
     <head>
@@ -13,7 +16,7 @@
         <nav class="w3-top">
             <div class="w3-bar w3-indigo">
                 <a href="#" class="w3-bar-item w3-button">Home</a>
-                <a href="#" class="w3-bar-item w3-button w3-hide-small">Philosophes</a>
+                <a href="./slideshow.html" class="w3-bar-item w3-button w3-hide-small">Philosophes</a>
                 <a href="#" class="w3-bar-item w3-button w3-hide-small">Tragédiens</a>
                 <a href="#" class="w3-bar-item w3-button w3-hide-small">Artistes</a>
                 <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
@@ -21,7 +24,7 @@
             </div>
 
             <div id="demo" class="w3-bar-block w3-indigo w3-hide w3-hide-large w3-hide-medium">
-                <a href="#" class="w3-bar-item w3-button">Philosophes</a>
+                <a href="./slideshow.html" class="w3-bar-item w3-button">Philosophes</a>
                 <a href="#" class="w3-bar-item w3-button">Tragédiens</a>
                 <a href="#" class="w3-bar-item w3-button">Artistes</a>
             </div>
@@ -34,10 +37,12 @@
         <h2 class="w3-center">Philosophes</h2>
         <section class="w3-container w3-cell-row">
                 <article class="w3-third w3-cell w3-mobile w3-light-gray w3-padding-small">
-                    <div class="w3-display-container" >
-                         <img src="../images/socrate.jpg" />
-                         <h2 class="w3-display-bottommiddle w3-opacity w3-text-white">Socrate</h2>
-                    </div>
+                    <a href="./slideshow.html">
+                        <div class="w3-display-container" >
+                             <img src="../images/socrate.jpg" />
+                             <h2 class="w3-display-bottommiddle w3-opacity w3-text-white">Socrate</h2>
+                        </div>
+                    </a>
                     <p>Socrate ...</p>
                 </article>
 
