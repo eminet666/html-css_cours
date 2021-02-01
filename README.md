@@ -46,6 +46,7 @@
 ### typo
 * [google fonts](https://fonts.google.com/)
 * [adobe fonts](https://fonts.adobe.com/)
+* [dafont](https://www.dafont.com/fr/)
 * [what font](http://www.chengyinliu.com/whatfont.html)
 * [generateur polices](https://www.fontsquirrel.com/tools/webfont-generator)
 * [stats usage typo](https://www.cssfontstack.com/)
